@@ -30,6 +30,13 @@ function handleCellPlayed(clickedCell, clickedCellIndex) {
 
 function handlePlayerChange() {
     currentPlayer = currentPlayer === "X" ? "O" : "X";
+    if(currentPlayer === "X") {
+        statusDisplay.style.color = "rgb(255, 0, 0)";
+    }
+    else if(currentPlayer === "O") {
+        statusDisplay.style.color = "rgb(0,0,255)";
+    }
+
     statusDisplay.innerHTML = currentPlayerTurn();
 }
 

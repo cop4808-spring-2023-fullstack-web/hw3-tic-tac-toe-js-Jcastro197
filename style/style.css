@@ -6,7 +6,6 @@ body {
 
 body {
     color: rgb(65, 65, 65);
-    background-color: rgb(210, 28, 28);
     font-family: Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
@@ -58,7 +57,9 @@ a:visited {
 /******        Game Status       *****/
 /*************************************/
 .status {
-    color: rgb(65, 65, 65);
+    color: rgb(255, 0, 0);
+    border: 4px solid rgb(65, 65, 65);
+    border-radius: 20px;
     /* color: orangered; */
     font-size: 1.2rem;
     font-weight: 600;
