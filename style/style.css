@@ -6,7 +6,7 @@ body {
 
 body {
     color: rgb(65, 65, 65);
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(210, 28, 28);
     font-family: Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
@@ -31,6 +31,7 @@ body {
     width: 6rem;
     height: 6rem;
     border: 6px solid rgb(65, 65, 65);
+    border-collapse: collapse;
     margin: -6px 0 0 -6px;
     text-align: center;
     vertical-align: middle;
@@ -38,6 +39,10 @@ body {
     font-size: 6rem;
     cursor: pointer;
     
+}
+
+.cell:hover{
+    background-color: rgb(231, 231, 231);
 }
 
 a {
