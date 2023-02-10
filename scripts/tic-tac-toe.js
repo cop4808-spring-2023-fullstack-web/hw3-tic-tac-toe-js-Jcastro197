@@ -1,5 +1,4 @@
 
-
 const statusDisplay = document.querySelector('.status');
 
 let gameActive = true;
@@ -25,15 +24,19 @@ const winningConditions = [
 
 function handleCellPlayed(clickedCell, clickedCellIndex) {
     gameState[clickedCellIndex] = currentPlayer;
-    clickedCell.innerHTML = currentPlayer;
+    clickedCell.innerHTML = currentPlayer; 
 }
+
+    
 
 function handlePlayerChange() {
     currentPlayer = currentPlayer === "X" ? "O" : "X";
     if(currentPlayer === "X") {
+        console.log(`It's, ${currentPlayer},'s turn`)
         statusDisplay.style.color = "rgb(255, 0, 0)";
     }
     else if(currentPlayer === "O") {
+        console.log(`It's, ${currentPlayer},'s turn`)
         statusDisplay.style.color = "rgb(0,0,255)";
     }
 
