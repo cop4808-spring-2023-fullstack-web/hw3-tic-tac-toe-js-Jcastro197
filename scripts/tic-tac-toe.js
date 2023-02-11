@@ -1,4 +1,3 @@
-
 const statusDisplay = document.querySelector('.status');
 
 let gameActive = true;
