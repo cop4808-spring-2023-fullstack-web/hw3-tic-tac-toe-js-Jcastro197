@@ -37,6 +37,7 @@ function handleCellPlayed(clickedCell, clickedCellIndex) {
 }
 
 //changed this function to handle the computer playing
+
 function handlePlayerChange() {
   currentPlayer = currentPlayer === "X" ? "O" : "X";
   statusDisplay.innerHTML = currentPlayerTurn();
@@ -45,7 +46,8 @@ function handlePlayerChange() {
   }
 }
 
-/*changed this function to handle the computer playing
+/*
+changed this function to handle the computer playing
 also added the counter for the wins
 function now also checks if the computer won
 i tried to make it so that the computer would play again if it won but it wouldnt work
@@ -128,6 +130,7 @@ function computerPlay() {
   handleCellPlayed(cell, cellIndex);
   handleResultValidation();
 }
+
 
 function handleRestartGame() {
   gameActive = true;
