@@ -1,8 +1,11 @@
+//elements selected from the DOM 
 const statusDisplay = document.querySelector('.status');
 const cpuWin = document.querySelector('.cpuWins');
 const playerWin = document.querySelector('.playerWins');
 
+//game variables 
 let gameActive = true;
+//this lets currentplayer be randomly selected
 let currentPlayer = Math.floor(Math.random()) < 0.5 ? "X" : "O";
 let gameState = ["", "", "", "", "", "", "", "", ""];
 
@@ -12,6 +15,7 @@ const currentPlayerTurn = () => `It's ${currentPlayer}'s turn`;
 
 
 statusDisplay.innerHTML = currentPlayerTurn();
+//is the counter for the wins
 cpuWin.innerHTML = `CPU Wins: 0`;
 playerWin.innerHTML = `Player Wins: 0`;
 
@@ -31,6 +35,7 @@ function handleCellPlayed(clickedCell, clickedCellIndex) {
   clickedCell.innerHTML = currentPlayer;
 }
 
+//changed this function to handle the computer playing
 function handlePlayerChange() {
   currentPlayer = currentPlayer === "X" ? "O" : "X";
   statusDisplay.innerHTML = currentPlayerTurn();
@@ -38,6 +43,9 @@ function handlePlayerChange() {
     computerPlay();
   }
 }
+
+//changed this function to handle the computer playing
+//also added the counter for the wins
 
 function handleResultValidation() {
   let roundWon = false;
