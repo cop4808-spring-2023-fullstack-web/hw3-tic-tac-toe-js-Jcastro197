@@ -9,6 +9,7 @@ let gameActive = true;
 let currentPlayer = Math.floor(Math.random()) < 0.5 ? "X" : "O";
 let gameState = ["", "", "", "", "", "", "", "", ""];
 
+//messages for the game
 const winningMessage = () => `Player ${currentPlayer} has won!`;
 const drawMessage = () => `Game ended in a draw!`;
 const currentPlayerTurn = () => `It's ${currentPlayer}'s turn`;
@@ -86,8 +87,6 @@ function handleResultValidation() {
 
   handlePlayerChange();
 }
-
-
 
 function handleCellClick(clickedCellEvent) {
   const clickedCell = clickedCellEvent.target;
