@@ -115,6 +115,13 @@ function computerPlay() {
   if (emptyCells.length === 0) {
     return;
   }
+
+  /*
+  creates a random number between 0 and the length of the emptyCells array
+  then uses that number to select a random cell from the emptyCells array
+  then plays that cell
+  */
+
   const randomIndex = Math.floor(Math.random() * emptyCells.length);
   const cellIndex = emptyCells[randomIndex];
   const cell = document.querySelector(`[data-cell-index="${cellIndex}"]`);
