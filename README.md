@@ -10,7 +10,7 @@
     <li>Started off by changing a details on status bar<br>
         Status bar text changes color when player switches</li>
     <li>Console shows next Players turn</li>
-    <li>added functions to handle computer moves</li>
+    <li>Added functions to handle computer moves</li>
     <li>Needed to call result validations inside handle player change</li>
     <li>Changed handle result validation function, to handle computer cell played</li>
     <li>Added computer play function to loop through the empty cell and plug its current value in the empty cell</li>
