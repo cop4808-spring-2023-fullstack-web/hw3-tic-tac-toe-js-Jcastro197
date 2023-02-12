@@ -3,7 +3,7 @@ const cpuWin = document.querySelector('.cpuWins');
 const playerWin = document.querySelector('.playerWins');
 
 let gameActive = true;
-let currentPlayer = Math.random() < 0.5 ? "X" : "O";
+let currentPlayer = Math.floor(Math.random()) < 0.5 ? "X" : "O";
 let gameState = ["", "", "", "", "", "", "", "", ""];
 
 const winningMessage = () => `Player ${currentPlayer} has won!`;
