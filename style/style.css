@@ -5,6 +5,9 @@ body {
 }
 
 body {
+    background:url(../images/tictactoebg.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
     color: rgb(65, 65, 65);
     font-family: Helvetica, sans-serif;
     display: flex;
@@ -14,6 +17,7 @@ body {
 }
 
 .header {
+    color: white;
     font-size: 2.5em;
     font-weight: 800;
     margin-top: 2.4rem;
@@ -30,6 +34,7 @@ body {
     width: 6rem;
     height: 6rem;
     border: 6px solid rgb(65, 65, 65);
+    border-color: white;
     border-collapse: collapse;
     margin: -6px 0 0 -6px;
     text-align: center;
