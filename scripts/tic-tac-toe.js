@@ -101,7 +101,8 @@ function handleCellClick(clickedCellEvent) {
   handleResultValidation();
 }
 
-/*added this function to make the computer play
+/*
+added this function to make the computer play
 it randomly selects an empty cell and plays it
 calls the handleResultValidation function to check if the computer won
 */
